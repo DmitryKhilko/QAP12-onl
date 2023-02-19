@@ -4,7 +4,7 @@
 print("Задание 1")
 
 string_1 = 'Robin Singh'
-list_1 = [string_1.split(" ")[0], string_1.split(" ")[1]]
+list_1 = string_1.split(" ")
 print(list_1)
 
 string_2 = 'I love arrays they are my favorite'
