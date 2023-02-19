@@ -22,10 +22,9 @@ print("Задание 2")
 
 string_2 = "абвгдеёжзийклм"
 print(string_2[0:8])  # первые восемь символов
-print(
-    string_2[int(len(string_2) / 2 - 1):int(len(string_2) / 2 + 3)]
-)  # четыре символа из центра строки
-print(string_2[2: int(len(string_2)):3])  # символы с индексами кратными трем
+# четыре символа из центра строки
+print(string_2[int(len(string_2) / 2 - 1):int(len(string_2) / 2 + 3)])
+print(string_2[2:int(len(string_2)):3])  # символы с индексами кратными трем
 print(string_2[::-1])  # перевернуть строку
 
 # Задание 3. Есть строка: “my name is name”. Напечатайте ее,
@@ -51,7 +50,8 @@ if test_tring.find("Hello") == 0:
     print("Строка начинается с подстроки 'Hello'")
 
 sub_str = "qwe"
-if test_tring.find(sub_str, len(test_tring) - len(sub_str), len(test_tring)) != -1:
+if test_tring.find(sub_str, len(test_tring) - len(sub_str),
+                   len(test_tring)) != -1:
     print("Строка оканчивается на подстроку '", sub_str, "'")
 else:
     print("Строка не оканчивается на подстроку '", sub_str, "'")

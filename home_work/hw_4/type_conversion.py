@@ -56,5 +56,18 @@ print("Задание 5")
 
 a = {'a': 1, 'b': 2, 'c': 3}
 b = {'c': 3, 'd': 4, 'e': 5}
-c = a | b
+c = {}
+
+for key, value in a.items():
+    if key in b:
+        c[key] = [a[key], b[key]]
+    else:
+        c[key] = [value, None]
+
+for key, value in b.items():
+    if key in a:
+        c[key] = [a[key], b[key]]
+    else:
+        c[key] = [None, value]
+
 print(c)
