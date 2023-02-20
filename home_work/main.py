@@ -3,6 +3,9 @@ from home_work.hw3 import (convert_to_int, replace_char_in_str, add_to_string,
                            remove_begin_and_end_spaces, add_class,
                            extracting_element_from_list, string_occurrence,
                            char_output_1, char_output_2, unique_number)
+from home_work.hw4 import (bool_and_1, bool_and_2, bool_and_3, bool_and_4,
+                           bool_or_1, bool_or_2, bool_or_3, bool_or_4)
+
 
 print(convert_to_int(-1.6))
 print(convert_to_int(2.99))
@@ -66,7 +69,6 @@ list_1 = [1, 5, 2, 9, 2, 9, 1]
 print(unique_number(list_1))
 
 # variables. Задание 1
-
 # variables. Задание 2
 # variables. Задание 3
 # variables. Задание 4
@@ -89,6 +91,17 @@ print(unique_number(list_1))
 # boolean_operations. Задание 1
 # boolean_operations. Задание 2
 # boolean_operations. Задание 3
+a = 3
+b = 4
+print(bool_and_1(a, b))
+print(bool_and_2(a, b))
+print(bool_and_3(a, b))
+print(bool_and_4(a, b))
+print(bool_or_1(a, b))
+print(bool_or_2(a, b))
+print(bool_or_3(a, b))
+print(bool_or_4(a, b))
+
 # boolean_operations. Задание 4
 
 # dictionaries. Задание 1
