@@ -5,8 +5,10 @@ from home_work.hw3 import (convert_to_int, replace_char_in_str, add_to_string,
                            char_output_1, char_output_2, unique_number)
 from home_work.hw4 import (variables, len_string, string_operations,
                            inserting_name_into_string, string_operations_1,
-                           bool_and_1, bool_and_2, bool_and_3, bool_and_4,
-                           bool_or_1, bool_or_2, bool_or_3, bool_or_4)
+                           list_operations, intersection_of_many,
+                           list_unique_values, bool_and_1, bool_and_2,
+                           bool_and_3, bool_and_4, bool_or_1, bool_or_2,
+                           bool_or_3, bool_or_4)
 
 
 print(convert_to_int(-1.6))
@@ -95,18 +97,21 @@ string_1 = "Hello world!"
 sub_str_1 = "qwe"
 print(string_operations_1(string_1, sub_str_1))
 
-# lists. Задание 1
-# lists. Задание 2
-# lists. Задание 3
-# lists. Задание 4
-# lists. Задание 5
-# lists. Задание 6
-# lists. Задание 7
-# lists. Задание 8
+# lists. Задание 1 - 6
+x = ["стол", "стул", "кровать", "шкаф"]
+y = ["1", "2", "3", "4"]
+print(list_operations(x, y))
 
-# boolean_operations. Задание 1
-# boolean_operations. Задание 2
-# boolean_operations. Задание 3
+# lists. Задание 7
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+print(intersection_of_many(a, b))
+
+# lists. Задание 8
+d = [1, 2, 3, 4, 3, 2, 5, 1, 4, 6, 7, 1, 8, 2, 3]
+print(list_unique_values(d))
+
+# boolean_operations. Задание 1 - 3
 a = 3
 b = 4
 print(bool_and_1(a, b))
