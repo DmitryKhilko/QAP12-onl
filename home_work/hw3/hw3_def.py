@@ -89,3 +89,20 @@ def string_occurrence(original_string: str, search_string: str) -> bool:
         return False
     else:
         return True
+
+
+# Задание 9.1
+def char_output_1(string: str, index: int) -> str:
+    return string[index]
+
+
+# Задание 9.2
+def char_output_2(string: str, start: int, stop: int, step: int) -> str:
+    return string[start:stop:step]
+
+
+# Задание 10
+def unique_number(given_array: list):
+    for i in range(len(given_array)):
+        if given_array.count(given_array[i]) == 1:
+            return given_array[i]

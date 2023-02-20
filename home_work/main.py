@@ -1,8 +1,8 @@
 from home_work.hw3 import (convert_to_int, replace_char_in_str, add_to_string,
                            changing_position_words,
                            remove_begin_and_end_spaces, add_class,
-                           extracting_element_from_list)
-
+                           extracting_element_from_list, string_occurrence,
+                           char_output_1, char_output_2, unique_number)
 
 print(convert_to_int(-1.6))
 print(convert_to_int(2.99))
@@ -45,10 +45,28 @@ list_1 = ["стол", "стул", "кровать", "шкаф"]
 print(extracting_element_from_list(list_1, 1))
 
 # hw3. Задание 8
-# hw3. Задание 9
+string_1 = "employment"
+string_2 = "employ"
+print(string_occurrence(string_1, string_2))
+
+# hw3. Задание 9.1
+string_1 = "My name is Agent Smith"
+index = 1
+print(char_output_1(string_1, index))
+
+# hw3. Задание 9.2
+string_1 = "My name is Agent Smith"
+start_index = 3
+stop_index = 16
+step = 3
+print(char_output_2(string_1, start_index, stop_index, step))
+
 # hw3. Задание 10
+list_1 = [1, 5, 2, 9, 2, 9, 1]
+print(unique_number(list_1))
 
 # variables. Задание 1
+
 # variables. Задание 2
 # variables. Задание 3
 # variables. Задание 4
