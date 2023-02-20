@@ -81,3 +81,11 @@ def extracting_element_from_list(user_list: list, element_number: int):
     else:
         return (f"Номер запрашиваемого элемента списка '{element_number}' "
                 f"больше количества элементов списка")
+
+
+# Задание 8
+def string_occurrence(original_string: str, search_string: str) -> bool:
+    if original_string.find(search_string) == -1:
+        return False
+    else:
+        return True
