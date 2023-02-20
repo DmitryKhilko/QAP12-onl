@@ -8,9 +8,10 @@ from home_work.hw4 import (variables, len_string, string_operations,
                            list_operations, intersection_of_many,
                            list_unique_values, bool_and_1, bool_and_2,
                            bool_and_3, bool_and_4, bool_or_1, bool_or_2,
-                           bool_or_3, bool_or_4)
+                           bool_or_3, bool_or_4, bool_str_1, bool_str_2)
 
 
+# hw3. Задание 1
 print(convert_to_int(-1.6))
 print(convert_to_int(2.99))
 
@@ -124,6 +125,10 @@ print(bool_or_3(a, b))
 print(bool_or_4(a, b))
 
 # boolean_operations. Задание 4
+string_1 = 'Строка первая'
+string_2 = 'Строка вторая'
+print(bool_str_1(string_1, string_2))
+print(bool_str_2(string_1, string_2))
 
 # dictionaries. Задание 1
 # dictionaries. Задание 2
