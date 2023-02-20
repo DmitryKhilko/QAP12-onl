@@ -53,24 +53,3 @@ def bool_or_4(var1: int, var2: int) -> bool:
         return True
     else:
         return False
-
-
-# # Задание 1. Присвойте двум переменным любые числовые значения.
-# a = 3
-# b = 4
-#
-
-# # Задание 4. Попробуйте использовать в сложных логических выражениях
-# # работу с переменными строкового типа.
-# string_1 = 'Строка первая'
-# string_2 = 'Строка вторая'
-#
-# if 0 < len(string_1) < 20 and string_2.find('вторая'):  # True
-#     print(True)
-# else:
-#     print(False)
-#
-# if string_1 == string_2 or string_1 in string_2:  # False
-#     print(True)
-# else:
-#     print(False)

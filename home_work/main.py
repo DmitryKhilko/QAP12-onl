@@ -3,9 +3,10 @@ from home_work.hw3 import (convert_to_int, replace_char_in_str, add_to_string,
                            remove_begin_and_end_spaces, add_class,
                            extracting_element_from_list, string_occurrence,
                            char_output_1, char_output_2, unique_number)
-from home_work.hw4 import (variables, bool_and_1, bool_and_2, bool_and_3,
-                           bool_and_4, bool_or_1, bool_or_2, bool_or_3,
-                           bool_or_4)
+from home_work.hw4 import (variables, len_string, string_operations,
+                           inserting_name_into_string, string_operations_1,
+                           bool_and_1, bool_and_2, bool_and_3, bool_and_4,
+                           bool_or_1, bool_or_2, bool_or_3, bool_or_4)
 
 
 print(convert_to_int(-1.6))
@@ -76,9 +77,23 @@ var_str = "No"
 print(variables(var_int, var_float, var_str))
 
 # strings. Задание 1
+string_1 = "Не менее 8 символов"
+print(len_string(string_1))
+
 # strings. Задание 2
+string_1 = "абвгдеёжзийклм"
+print(string_operations(string_1))
+
 # strings. Задание 3
+string_1 = "my name is name"
+string_2 = "name"
+string_3 = "Dmitry"
+print(inserting_name_into_string(string_1, string_2, string_3))
+
 # strings. Задание 4
+string_1 = "Hello world!"
+sub_str_1 = "qwe"
+print(string_operations_1(string_1, sub_str_1))
 
 # lists. Задание 1
 # lists. Задание 2
