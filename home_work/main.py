@@ -12,7 +12,9 @@ from home_work.hw4 import (variables, len_string, string_operations,
                            count_student, change_count_students,
                            add_school_classes, delete_class, str_to_arr,
                            greetings, list_to_str, add_pop_list,
-                           merging_dictionaries)
+                           merging_dictionaries, number_operations,
+                           number_of_positive_numbers, days_a_year,
+                           name_of_day, conversion_to_kilograms)
 
 
 # hw3. Задание 1
@@ -186,10 +188,25 @@ c = {}
 print(merging_dictionaries(a, b, c))
 
 # conditions. Задание 1
+a = 10
+print(number_operations(a))
+
 # conditions. Задание 2
+list_1 = [-3, 5, 7]
+print(f"Количество положительных чисел: {number_of_positive_numbers(list_1)}")
+
 # conditions. Задание 3
+year = 2024
+print(days_a_year(year))
+
 # conditions. Задание 4
+day_number = 3
+print(name_of_day(day_number))
+
 # conditions. Задание 5
+unit_of_mass = 4
+body_mass = 5
+print(conversion_to_kilograms(unit_of_mass, body_mass))
 
 # loop_for. Задание 1
 # loop_for. Задание 2
