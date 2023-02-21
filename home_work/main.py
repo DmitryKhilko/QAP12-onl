@@ -10,7 +10,9 @@ from home_work.hw4 import (variables, len_string, string_operations,
                            bool_and_3, bool_and_4, bool_or_1, bool_or_2,
                            bool_or_3, bool_or_4, bool_str_1, bool_str_2,
                            count_student, change_count_students,
-                           add_school_classes, delete_class)
+                           add_school_classes, delete_class, str_to_arr,
+                           greetings, list_to_str, add_pop_list,
+                           merging_dictionaries)
 
 
 # hw3. Задание 1
@@ -156,10 +158,32 @@ delete_class('8г', school)
 print(school)
 
 # type_conversion. Задание 1
+string_1 = 'Robin Singh'
+string_2 = 'I love arrays they are my favorite'
+print(str_to_arr(string_1))
+print(str_to_arr(string_2))
+
 # type_conversion. Задание 2
+list_fio = ['Ivan', 'Ivanov']
+city = 'Minsk'
+country = 'Belarus'
+print(greetings(list_fio, city, country))
+
 # type_conversion. Задание 3
+list_1 = ["I", "love", "arrays", "they", "are", "my", "favorite"]
+print(list_to_str(list_1))
+
 # type_conversion. Задание 4
+list_1 = ["стол", "стул", "кресло", "тумбочка", "кровать", "диван",
+          "табуретка", "полка для обуви", "шкаф", "горка"]
+new_value = "журнальный столик"
+print(add_pop_list(new_value, list_1))
+
 # type_conversion. Задание 5
+a = {'a': 1, 'b': 2, 'c': 3}
+b = {'c': 3, 'd': 4, 'e': 5}
+c = {}
+print(merging_dictionaries(a, b, c))
 
 # conditions. Задание 1
 # conditions. Задание 2
