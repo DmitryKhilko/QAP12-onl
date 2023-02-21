@@ -8,7 +8,9 @@ from home_work.hw4 import (variables, len_string, string_operations,
                            list_operations, intersection_of_many,
                            list_unique_values, bool_and_1, bool_and_2,
                            bool_and_3, bool_and_4, bool_or_1, bool_or_2,
-                           bool_or_3, bool_or_4, bool_str_1, bool_str_2)
+                           bool_or_3, bool_or_4, bool_str_1, bool_str_2,
+                           count_student, change_count_students,
+                           add_school_classes, delete_class)
 
 
 # hw3. Задание 1
@@ -130,9 +132,28 @@ string_2 = 'Строка вторая'
 print(bool_str_1(string_1, string_2))
 print(bool_str_2(string_1, string_2))
 
-# dictionaries. Задание 1
-# dictionaries. Задание 2
-# dictionaries. Задание 3
+# dictionaries. Задание 1 - 3
+school = {
+    '1a': 20,
+    '2б': 18,
+    '3в': 23,
+    '4г': 21,
+    '5а': 20,
+    '6б': 19,
+    '7в': 24,
+    '8г': 22,
+    '9а': 25,
+    '10а': 24,
+}
+
+print(count_student('3в', school))
+change_count_students('2б', 21, school)
+change_count_students('5а', 23, school)
+change_count_students('10а', 20, school)
+add_school_classes('2в', 22, school)
+add_school_classes('10б', 25, school)
+delete_class('8г', school)
+print(school)
 
 # type_conversion. Задание 1
 # type_conversion. Задание 2
