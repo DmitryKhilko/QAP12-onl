@@ -16,7 +16,9 @@ from home_work.hw4 import (variables, len_string, string_operations,
                            number_of_positive_numbers, days_a_year,
                            name_of_day, conversion_to_kilograms,
                            sum_of_integers, sum_of_natural_numbers,
-                           integer_operations, best_result)
+                           integer_operations, best_result,
+                           multiplication_of_numbers, calculation_of_years,
+                           count_and_sum_number, difference_calculation)
 
 # hw3. Задание 1
 print(convert_to_int(-1.6))
@@ -240,7 +242,23 @@ print(best_result(dict_1))
 # Реализовано ранее - # hw3. Задание 10
 
 # loop_while. Задание 1
+n = 10
+print(f"Произведение всех чисел от 0 до {n} = {multiplication_of_numbers(n)}")
 
 # loop_while. Задание 2
+s_1 = 10
+s_2 = 10
+print(f"Через {calculation_of_years(s_1, s_2)} лет площадь первых сортов "
+      f"будет составлять меньше 10% от площади вторых сортов")
+
 # loop_while. Задание 3
+n = 2222
+print(f"Сумма цифр = {count_and_sum_number(n)[0]}\nКоличество цифр ="
+      f" {count_and_sum_number(n)[1]}")
+
 # loop_while. Задание 4
+m = 30
+n = 12
+print(f"Дед станет вдвое старше внука через:{difference_calculation(m, n)[0]}")
+print(f"Деду будет: {difference_calculation(m, n)[1]}")
+print(f"Внуку будет: {difference_calculation(m, n)[2]}")
