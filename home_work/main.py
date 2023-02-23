@@ -14,8 +14,9 @@ from home_work.hw4 import (variables, len_string, string_operations,
                            greetings, list_to_str, add_pop_list,
                            merging_dictionaries, number_operations,
                            number_of_positive_numbers, days_a_year,
-                           name_of_day, conversion_to_kilograms)
-
+                           name_of_day, conversion_to_kilograms,
+                           sum_of_integers, sum_of_natural_numbers,
+                           integer_operations, best_result)
 
 # hw3. Задание 1
 print(convert_to_int(-1.6))
@@ -209,12 +210,37 @@ body_mass = 5
 print(conversion_to_kilograms(unit_of_mass, body_mass))
 
 # loop_for. Задание 1
+a = 3
+b = 9
+print(f"Сумма целых чисел от {a} до {b} включительно: {sum_of_integers(a, b)}")
+
 # loop_for. Задание 2
+list_1 = [1, -3, 2, 2.2, 3, 4.1]
+print(f"Сумма всех натуральных чисел: {sum_of_natural_numbers(list_1)}")
+
 # loop_for. Задание 3
+list_1 = [1, -2, -3, -4, 5, 6, 7, 8, 9, -10]
+integer_operations(list_1)
+print(f"Произведение положительных чисел: {integer_operations(list_1)[0]}")
+print(f"Сумма отрицательных чисел: {integer_operations(list_1)[1]}")
+print(f"Количество отрицательных чисел: {integer_operations(list_1)[2]}")
+
 # loop_for. Задание 4
+dict_1 = {
+    "Бекиш Александр": 21.07,
+    "Будник Алексей": 20.34,
+    "Гребень Анастасия": 22.12,
+    "Давидович Татьяна": 30,
+    "Дешук Дмитрий": 24.01,
+    "Казак Анна": 28.17,
+}
+print(best_result(dict_1))
+
 # loop_for. Задание 5
+# Реализовано ранее - # hw3. Задание 10
 
 # loop_while. Задание 1
+
 # loop_while. Задание 2
 # loop_while. Задание 3
 # loop_while. Задание 4

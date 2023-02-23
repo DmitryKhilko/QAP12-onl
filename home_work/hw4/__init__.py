@@ -4,4 +4,5 @@ from home_work.hw4.strings_def import *
 from home_work.hw4.lists_def import *
 from home_work.hw4.dictionaries_def import *
 from home_work.hw4.type_conversion_def import *
-from  home_work.hw4.conditions_def import *
+from home_work.hw4.conditions_def import *
+from home_work.hw4.loop_for_def import *
