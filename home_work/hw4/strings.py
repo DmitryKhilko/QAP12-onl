@@ -5,11 +5,13 @@
 print("Задание 1")
 
 string_1 = "Не менее 8 символов"
-print(string_1[0])
-print(string_1[len(string_1) - 1])
-print(string_1[2])
-print(string_1[len(string_1) - 3])
-print(len(string_1))
+list_of_string = list(string_1)
+list_of_string.pop(0)
+list_of_string.pop()  # удаляем последний символ
+list_of_string.pop(2)
+list_of_string.pop(-2)
+
+print(len(list_of_string))
 
 # Задание 2. Присвойте произвольную строку длиной 10-15
 # символов переменной и извлеките из нее следующие срезы:
@@ -43,6 +45,9 @@ print("")
 print("Задание 4")
 
 test_tring = "Hello world!"
+print(test_tring.find("Hello"))  # 0
+print(test_tring.find("e"))  # 1
+
 print(test_tring.find("w") + 1)
 print(test_tring.count("l"))
 
