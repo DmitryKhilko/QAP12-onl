@@ -259,6 +259,10 @@ print(f"Сумма цифр = {count_and_sum_number(n)[0]}\nКоличество
 # loop_while. Задание 4
 m = 30
 n = 12
-print(f"Дед станет вдвое старше внука через:{difference_calculation(m, n)[0]}")
+difference = difference_calculation(m, n)[0]  # результат функции в переменную
+print(f"Дед станет вдвое старше внука через:{difference}")
 print(f"Деду будет: {difference_calculation(m, n)[1]}")
 print(f"Внуку будет: {difference_calculation(m, n)[2]}")
+
+a_100, b_100 = 0, 1
+print(a_100, b_100)
