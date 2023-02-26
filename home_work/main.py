@@ -19,6 +19,8 @@ from home_work.hw4 import (variables, len_string, string_operations,
                            integer_operations, best_result,
                            multiplication_of_numbers, calculation_of_years,
                            count_and_sum_number, difference_calculation)
+from home_work.hw6 import (output_from_file, even_and_odd_numbers,
+                           squares_of_real_numbers)
 
 # hw3. Задание 1
 print(convert_to_int(-1.6))
@@ -266,3 +268,15 @@ print(f"Внуку будет: {difference_calculation(m, n)[2]}")
 
 a_100, b_100 = 0, 1
 print(a_100, b_100)
+
+# files. Задание 1
+print(output_from_file('C:/Users/dmitr/PycharmProjects/'
+                       'QAP12-onl/home_work/hw6/hw6_file1.txt'))
+
+# files. Задание 2
+print(even_and_odd_numbers('C:/Users/dmitr/PycharmProjects/'
+                           'QAP12-onl/home_work/hw6/hw6_file2.txt'))
+
+# files. Задание 3
+print(squares_of_real_numbers('C:/Users/dmitr/PycharmProjects/'
+                              'QAP12-onl/home_work/hw6/hw6_file3.txt'))
