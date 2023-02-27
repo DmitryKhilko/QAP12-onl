@@ -1,3 +1,5 @@
+import os
+
 from home_work.hw3 import (convert_to_int, replace_char_in_str, add_to_string,
                            changing_position_words,
                            remove_begin_and_end_spaces, add_class,
@@ -20,7 +22,8 @@ from home_work.hw4 import (variables, len_string, string_operations,
                            multiplication_of_numbers, calculation_of_years,
                            count_and_sum_number, difference_calculation)
 from home_work.hw6 import (output_from_file, even_and_odd_numbers,
-                           squares_of_real_numbers)
+                           squares_of_real_numbers, swap_file_contents,
+                           base_folder)
 
 # hw3. Задание 1
 print(convert_to_int(-1.6))
@@ -270,13 +273,16 @@ a_100, b_100 = 0, 1
 print(a_100, b_100)
 
 # files. Задание 1
-print(output_from_file('C:/Users/dmitr/PycharmProjects/'
-                       'QAP12-onl/home_work/hw6/hw6_file1.txt'))
+print(output_from_file(os.path.join(base_folder, 'hw6_file1.txt')))
 
 # files. Задание 2
-print(even_and_odd_numbers('C:/Users/dmitr/PycharmProjects/'
-                           'QAP12-onl/home_work/hw6/hw6_file2.txt'))
+print(even_and_odd_numbers(os.path.join(base_folder, 'hw6_file2.txt')))
 
 # files. Задание 3
-print(squares_of_real_numbers('C:/Users/dmitr/PycharmProjects/'
-                              'QAP12-onl/home_work/hw6/hw6_file3.txt'))
+print(squares_of_real_numbers(os.path.join(base_folder, 'hw6_file3.txt')))
+
+# files. Задание 4
+print(swap_file_contents(os.path.join(base_folder, 'first.dat'),
+                         'Hello from file_1',
+                         os.path.join(base_folder, 'second.dat'),
+                         'Hello from file_2'))
