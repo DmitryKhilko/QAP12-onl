@@ -1,9 +1,8 @@
-import unittest
+import pytest
 # Задание 1. Даны два целых числа A и B (A < B).
 # Найти сумму всех целых чисел от A до B включительно.
 """
 Чек-лист для проверки функции:
-
 А и В - целые числа
 A < B
 1 < A <= 5
@@ -59,91 +58,42 @@ def sum_of_integers(number_1: int, number_2: int):
         return "А должно быть целым числом в диапазоне от 2 до 5"
 
 
-class TestSumOfIntegers(unittest.TestCase):
+class TestMainPage1(object):
+    def test_1(self):
+        assert sum_of_integers(3, 7) == 25, "Неверный результат"
 
-    def test_01(self):
-        self.assertEqual(25, sum_of_integers(3, 7))
+    def test_2(self):
+        assert sum_of_integers(2, 6) == 20, "Неверный результат"
 
-    def test_02(self):
-        self.assertEqual(20, sum_of_integers(2, 6))
+    def test_3(self):
+        assert sum_of_integers(5, 9) == 35, "Неверный результат"
 
-    def test_03(self):
-        self.assertEqual(25, sum_of_integers(3, 7))
+    def test_4(self):
+        assert sum_of_integers(4, 8) == 30, "Неверный результат"
 
-    def test_04(self):
-        self.assertEqual(35, sum_of_integers(5, 9))
+    def test_5(self):
+        assert sum_of_integers(7, 5) == "А должно быть в диапазоне от 2 до 5", "Неверный результат"
 
-    def test_05(self):
-        self.assertEqual(30, sum_of_integers(4, 8))
+    def test_6(self):
+        assert sum_of_integers(3, 7.1) == "В должно быть целым числом в диапазоне от 6 до 10", "Неверный результат"
 
-    def test_06(self):
-        self.assertEqual("А должно быть в диапазоне от 2 до 5",
-                         sum_of_integers(7, 5))
+    def test_7(self):
+        assert sum_of_integers(3, "6") == "В должно быть целым числом в диапазоне от 6 до 10", "Неверный результат"
 
-    def test_07(self):
-        self.assertEqual("В должно быть целым числом в диапазоне от 6 до 10",
-                         sum_of_integers(3, 7.1))
+    def test_8(self):
+        assert sum_of_integers(3, 0) == "B должно быть в диапазоне от 6 до 10", "Неверный результат"
 
-    def test_08(self):
-        self.assertEqual("В должно быть целым числом в диапазоне от 6 до 10",
-                         sum_of_integers(3, "6"))
-
-    def test_09(self):
-        self.assertEqual("B должно быть в диапазоне от 6 до 10",
-                         sum_of_integers(3, 0))
+    def test_9(self):
+        assert sum_of_integers(3, "") == "В должно быть целым числом в диапазоне от 6 до 10", "Неверный результат"
 
     def test_10(self):
-        self.assertEqual("В должно быть целым числом в диапазоне от 6 до 10",
-                         sum_of_integers(3, ""))
+        assert sum_of_integers(3.1, 6) == "А должно быть целым числом в диапазоне от 2 до 5", "Неверный результат"
 
     def test_11(self):
-        self.assertEqual("А должно быть целым числом в диапазоне от 2 до 5",
-                         sum_of_integers(3.1, 6))
+        assert sum_of_integers("3", 6) == "А должно быть целым числом в диапазоне от 2 до 5", "Неверный результат"
 
     def test_12(self):
-        self.assertEqual("А должно быть целым числом в диапазоне от 2 до 5",
-                         sum_of_integers("3", 6))
+        assert sum_of_integers(0, 6) == "А должно быть в диапазоне от 2 до 5", "Неверный результат"
 
     def test_13(self):
-        self.assertEqual("А должно быть в диапазоне от 2 до 5",
-                         sum_of_integers(0, 6))
-
-    def test_14(self):
-        self.assertEqual("А должно быть целым числом в диапазоне от 2 до 5",
-                         sum_of_integers("", 6))
-
-
-
-# Задание 2
-def sum_of_natural_numbers(list_natural_numbers: list):
-    sum_numbers = 0
-    for i in range(len(list_natural_numbers)):
-        if list_natural_numbers[i] > 0 and not isinstance(
-            list_natural_numbers[i], float
-        ):
-            sum_numbers += list_natural_numbers[i]
-    return sum_numbers
-
-
-# Задание 3
-def integer_operations(list_integers_numbers: list):
-    multiplication_of_positive_num = 1
-    sum_of_negative_num = 0
-    count_of_negative_num = 0
-
-    for i in range(len(list_integers_numbers)):
-        if list_integers_numbers[i] > 0:
-            multiplication_of_positive_num *= list_integers_numbers[i]
-        else:
-            sum_of_negative_num += list_integers_numbers[i]
-            count_of_negative_num += 1
-    return multiplication_of_positive_num, sum_of_negative_num, \
-        count_of_negative_num
-
-
-# Задание 4
-def best_result(dict_swimmers: dict):
-    for key, value in dict_swimmers.items():
-        if value == max(dict_swimmers.values()):
-            return f"Лучший результат заплыва: {key} - " \
-                   f"{max(dict_swimmers.values())}"
+        assert sum_of_integers("", 6) == "А должно быть целым числом в диапазоне от 2 до 5", "Неверный результат"
