@@ -219,10 +219,10 @@ from home_work.hw6 import (output_from_file, even_and_odd_numbers,
 #
 
 
-# loop_for. Задание 1
-a = 3
-b = "6"
-print(sum_of_integers(a, b))
+# # loop_for. Задание 1
+# a = 3
+# b = "6"
+# print(sum_of_integers(a, b))
 
 
 
@@ -258,10 +258,10 @@ print(sum_of_integers(a, b))
 # print(multiplication_of_numbers(n))
 
 
-# # loop_while. Задание 2
-# s_1 = 4
-# s_2 = 1.2
-# print(calculation_of_years(s_1, s_2))
+# loop_while. Задание 2
+s_1 = 6
+s_2 = 4
+print(calculation_of_years(s_1, s_2))
 
 # # loop_while. Задание 3
 # n = 2222
